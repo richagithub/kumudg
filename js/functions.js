@@ -86,6 +86,6 @@ for(var k =1; k<=9; k++){
     }
   if(k>=8)
     {
-    $("#r"+k).attr('src', 'images/drawing0.JPG');
+    $("#r"+k).attr('src', 'images/drawing0.jpg');
     }
 }
