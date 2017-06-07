@@ -36,7 +36,7 @@ for(i =1; i<= 3; i++){
   $('#work_section').append('<div class="row margin_0">'+
                             '<div class="col-md-2 xs-p-0">'+
                             '</div>'+
-                                '<div id="worksection_'+ i +'" class="col-md-20 col-xs-24 xs-p-0 "'+'>'+
+                                '<div class="col-md-20 col-xs-24 xs-p-0 worksection_'+i+'"'+'>'+
                                 '</div>'+
                             '<div class="col-md-2 xs-p-0">'+
                             '</div>'+
@@ -44,7 +44,7 @@ for(i =1; i<= 3; i++){
 }
 for(j =1; j<= i; j++){
     if(j!=1){s=s+3;}
-     var child=$('#worksection_'+j);
+     var child=$('.worksection_'+j);
     if(j==1){
         for(d =1; d<= 3; d++){
         child.append('<div id="r'+ d + 1 +'" class="col-md-8 col-xs-24 xs-p-0 work_images contain_image">'+
