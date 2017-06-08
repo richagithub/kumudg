@@ -18,18 +18,18 @@
 //            }
 //            return false;
 //        });
-$('#home').on("click", function () {
-    $('#home_section').css('display','block');
-    $('#work_section').css('display','none');
-});
-$('#work').on("click", function () {
-    $('#work_section').css('display','block');
-    $('#home_section').css('display','none');
-});
-$('#year1').on("click", function () {
-    $('#home_section').css('display','none');
-    $('#work_section').css('display','block');
-});
+// $('#home').on("click", function () {
+//     $('#home_section').css('display','block');
+//     $('#work_section').css('display','none');
+// });
+// $('#work').on("click", function () {
+//     $('#work_section').css('display','block');
+//     $('#home_section').css('display','none');
+// });
+// $('#year1').on("click", function () {
+//     $('#home_section').css('display','none');
+//     $('#work_section').css('display','block');
+// });
 
 var i=1,j=1,s=1,d=1,m,n;
 for(i =1; i<= 3; i++){
