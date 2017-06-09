@@ -15,6 +15,51 @@
       $("#headerInclude").load("header.html");
     });
   </script>
+    <style>
+        .leftColumn{
+/*            border:1px solid #000;*/
+            height: 100%;
+        }
+        .innerRightColumn{
+            border:1px solid #000;
+            min-height: 200px;
+            text-align: center;
+            padding: 73px;
+        }
+        .work_head{
+/*            border:1px solid #000;*/
+            min-height: 150px;
+            text-align: center;
+            padding: 63px;
+        }
+
+
+.menuLeft {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 115px;
+    width: 16.66666667%;
+    min-height: 500px;
+    padding: 50px 0;
+}
+
+.linkMenu a {
+    display: block;
+    color: #000;
+    padding: 18px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change the link color on hover */
+.linkMenu a:hover {
+    background-color: #555;
+    color: white;
+}
+    </style>
 </head>
 
 <body>
@@ -22,7 +67,24 @@
 <div class="page">
     <div id="headerInclude"></div>
     <div style="height: 100px;"></div>   <!-- empty div on top -->
-    <div id="work_section"></div>
+
+    <div class="row xs-m-0">
+        <div class="col-xs-4 xs-p-0 leftColumn">
+            <ul class="menuLeft">
+                <li class="linkMenu"><a href="#">Canvas</a></li>
+                <li class="linkMenu"><a href="#">Sketches</a></li>
+                <li class="linkMenu"><a href="#">Paintings</a></li>
+                <li class="linkMenu"><a href="#">Crafts</a></li>
+                <li class="linkMenu"><a href="#">Madhubani</a></li>
+                <li class="linkMenu"><a href="#">Miscellaneous</a></li>
+                <li class="linkMenu"><a href="#">Photography</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-20 xs-p-0 rightColumn">
+               <div id="work_section"></div>
+        </div>
+    </div>
 
 <!-- <footer>
     <div class="row margin_0 footer">

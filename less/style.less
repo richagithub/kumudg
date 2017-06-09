@@ -5,7 +5,8 @@
 @grey:	#B8B8B8;
 .page{
     .shop_cart{
-        min-width:120px;
+        // min-width:120px;
+        min-width:65px;
         float: right;
         color:@dark_purple;
         font-size: 18px;
@@ -188,4 +189,25 @@
 	-ms-transform: translate(-50%, -50%);
 }
 
+}
+
+
+// keeping outside the page class as has to apply on body
+// scroll bar styling
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ /*for the scroll bar on the page itself*/
+::-webkit-scrollbar-track {
+    // background-color: #ebebeb;
+    background: @white;
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+    background: @grey;
 }
