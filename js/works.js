@@ -31,6 +31,11 @@
 //     $('#work_section').css('display','block');
 // });
 
+$('#myTab').on('click', 'li', function(){
+  $('#myTab li').removeClass('active');
+  $(this).addClass('active');
+});
+
 var i=1,j=1,s=1,d=1,m,n;
 for(i =1; i<= 2; i++){
   $('#work_section').append('<div class="row margin_0">'+

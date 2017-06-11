@@ -41,6 +41,11 @@
       .mainList{
         display:inline-block;
         }
+        .active{
+          .links{
+            color:@border_heading;
+          }
+        }
         .links{
             color:@black;
             font-size: 15px;
@@ -196,7 +201,7 @@
 
 
 // keeping outside the page class as has to apply on body
-// scroll bar styling
+/* start scroll bar styling */
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -214,6 +219,7 @@
     // border-radius: 10px;
     background: @grey;
 }
+/* end scroll bar styling */
 
 /*----START----styling for work page*/
 
@@ -256,3 +262,10 @@ background-color: #555;
 color: @white;
 }
 /*----END----styling for work page*/
+
+
+@media screen and (min-device-width: 769px) {
+#home_sectionMobile{
+  display: none !important;
+}
+}
