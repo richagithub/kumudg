@@ -1,4 +1,21 @@
 <html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src='bootstrap/js/bootstrap.js'></script>
+    <title>Kumud Gautami|Intro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/less-space-check.css" rel="stylesheet">
+    <link href="css/js-image-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+  <script>
+    $(function(){
+      $("#headerInclude").load("header.html");
+    });
+  </script>
+</head>
 <body>
 <header>
     <div class="row margin_0">
@@ -19,25 +36,8 @@
                     <ul class="nav navbar-nav" id="myTab">
                         <li class="mainList active"><a class="links" href="index.html" id="home"><span>Home</span></a>
                         </li>
-                        <li class="mainList"><a class="links" href="works.html" target="_parent" id="work"><span>Work</span></a>
+                        <li class="mainList"><a class="links" href="works.html" id="work"><span>Work</span></a>
                         </li>
-                        <!-- <li class="dropdown mainList">
-                            <a class="links" href="works.html" target="_parent" id="work">
-                                <span>Works</span>
-                                <i class="arrow arrow_dir"></i>
-                            </a>
-
-                                <div class="dropdown-content">
-                                <a id="year1">2010</a>
-                                <a href="#">2011</a>
-                                <a href="#">2012</a>
-                                <a href="#">2013</a>
-                                <a href="#">2014</a>
-                                <a href="#">2015</a>
-                                <a href="#">2016</a>
-                                </div>
-
-                        </li> -->
                         <li class="mainList"><a class="links" href="intro.html"><span>Intro</span></a>
                         </li>
                         <li class="mainList"><a class="links" href="#exhibitions"><span>Exhibitions</span></a>
@@ -69,10 +69,10 @@
 
 </header>
 <script>
-$('#myTab').on('click', 'li', function(){
-  $('#myTab li').removeClass('active');
-  $(this).addClass('active');
-});
+$("#myTab li a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+
+    });
 </script>
 </body>
 </html>
