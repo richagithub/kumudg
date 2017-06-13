@@ -92,8 +92,3 @@ for(var k =1; k<=9; k++){
     $("#r"+k+1).css('display','none');
     }
 }
-
-$("#myTab li a").click(function() {
-    $(this).parent().addClass('active').siblings().removeClass('active');
-
-});
