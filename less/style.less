@@ -246,7 +246,9 @@ position: fixed;
 top: 67px;
 width: 16.66666667%;
 min-height: 550px;
-padding: 50px 0;
+padding: 125px 0;
+font-size: 22px;
+font-family: 'Georgia';
 }
 
 .linkMenu a {
@@ -308,7 +310,7 @@ color: @white;
         .submit_btn {
           border-radius: 0;
           background-color: transparent;
-          color: #fff;
+          color: @white;
           border: 2px solid;
           font-weight: bold;
           padding: 10px;
@@ -321,6 +323,10 @@ color: @white;
               outline-offset: 0;
           }
       }
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px @dark_purple inset !important;
+    -webkit-text-fill-color:@white;
 }
 .my_credentials {
   a{
