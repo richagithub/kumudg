@@ -15,7 +15,7 @@
         </div>
         <div class="col-md-16 col-xs-24" id="menu_filter_mobile">
             <div class="heading_right_full" id="sub_nav_list">
-              <div class="navbar-collapse mainNavbar xs-p-0">
+              <div class="navbar-collapse mainNavbar xs-p-0" id="topTab">
                     <ul class="nav navbar-nav" id="myTab">
                         <li class="mainList active"><a class="links" href="index.html" id="home"><span>Home</span></a>
                         </li>
@@ -69,9 +69,17 @@
 
 </header>
 <script>
-$('#myTab').on('click', 'li', function(){
-  $('#myTab li').removeClass('active');
-  $(this).addClass('active');
+// $('#myTab').on('click', 'li', function(){
+//   $('#myTab li').removeClass('active');
+//   $(this).addClass('active');
+// });
+
+$(function () {
+    $("#topTab a").click(function(e){
+        e.preventDefault();
+        $(this).addClass('active');
+        $(this).parent().siblings().find('a').removeClass('active');
+    });
 });
 </script>
 </body>
