@@ -38,7 +38,7 @@
                                 </div>
 
                         </li> -->
-                        <li class="mainList"><a class="links" href="#intro"><span>Intro</span></a>
+                        <li class="mainList"><a class="links" href="intro.html"><span>Intro</span></a>
                         </li>
                         <li class="mainList"><a class="links" href="#exhibitions"><span>Exhibitions</span></a>
                         </li>
@@ -68,5 +68,11 @@
     <!-- start of ROW 2-->
 
 </header>
+<script>
+$('#myTab').on('click', 'li', function(){
+  $('#myTab li').removeClass('active');
+  $(this).addClass('active');
+});
+</script>
 </body>
 </html>
