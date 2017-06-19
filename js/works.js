@@ -18,11 +18,6 @@
 //            }
 //            return false;
 //        });
-$(document).ready(function(){
-    $("#work").click(function(){
-        $("#years").slideToggle("slow");
-    });
-});
 
 $("#years li a").click(function() {
     $(this).parent().addClass('active').siblings().removeClass('active');
