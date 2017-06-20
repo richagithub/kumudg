@@ -14,6 +14,7 @@
   <script>
     $(function(){
       $("#headerInclude").load("header.html");
+      $("#footerInclude").load("footer.html");
     });
   </script>
 </head>
@@ -23,55 +24,58 @@
   <div class="page">
       <div id="headerInclude"></div>
       <div style="height: 58px;"></div>   <!-- empty div on top -->
-<div class="contactPage shiftDown">
-      <div class="row xs-m-0">
-        <div class="col-md-24 xs-pt-70 xs-pb-70 contactPage shiftDown" id="contact">
+      <div class="contactPage shiftDown">
+            <div class="row xs-m-0">
+              <div class="col-md-24 xs-pt-70 xs-pb-70 contactPage shiftDown" id="contact">
+                      <div class="col-md-8"></div>
+                      <div class="col-md-8 col-xs-24">
+                          <div class="contact_me">
+                            <form action="/action_page.php">
+                              <div class="form-group">
+                                <label for="name">Your Name:<span class="red"> *</span></label>
+                                <input type="text" class="form-control comments" id="name" placeholder="your name">
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email Address: <span class="red"> *</span></label>
+                                <input type="" class="form-control comments" id="email" placeholder="your email address">
+                              </div>
+                              <div class="form-group">
+                                <label>Comments</label>
+                                <textarea rows="4" cols="50" class="comments xs-p-10"></textarea>
+                              </div>
+                              <button type="submit" class="submit_btn btn btn-default">Submit</button>
+                            </form>
+                          </div>
+                      </div>
+                      <div class="col-md-8"></div>
+                </div>
+            </div>
+
+            <div class="row xs-m-0">
                 <div class="col-md-8"></div>
                 <div class="col-md-8 col-xs-24">
-                    <div class="contact_me">
-                      <form action="/action_page.php">
-                        <div class="form-group">
-                          <label for="name">Your Name:<span class="red"> *</span></label>
-                          <input type="text" class="form-control comments" id="name" placeholder="your name">
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email Address: <span class="red"> *</span></label>
-                          <input type="" class="form-control comments" id="email" placeholder="your email address">
-                        </div>
-                        <div class="form-group">
-                          <label>Comments</label>
-                          <textarea rows="4" cols="50" class="comments xs-p-10"></textarea>
-                        </div>
-                        <button type="submit" class="submit_btn btn btn-default">Submit</button>
-                      </form>
+                    <div class="my_credentials">
+                      <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-square xs-pr-20 connect_icon" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa fa-instagram xs-pr-20 connect_icon" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin-square xs-pr-20 connect_icon" aria-hidden="true"></i>
+                      </a>
+                      <a href="https://gmail.com" target="_blank">
+                        <i class="fa fa-envelope connect_icon" aria-hidden="true"></i>
+                      </a>
                     </div>
                 </div>
                 <div class="col-md-8"></div>
-          </div>
-      </div>
+            </div>
 
-      <div class="row xs-m-0">
-          <div class="col-md-8"></div>
-          <div class="col-md-8 col-xs-24">
-              <div class="my_credentials">
-                <a href="https://www.facebook.com/" target="_blank">
-                  <i class="fa fa-facebook-square xs-pr-20 connect_icon" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                  <i class="fa fa-instagram xs-pr-20 connect_icon" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                  <i class="fa fa-linkedin-square xs-pr-20 connect_icon" aria-hidden="true"></i>
-                </a>
-                <a href="https://gmail.com" target="_blank">
-                  <i class="fa fa-envelope connect_icon" aria-hidden="true"></i>
-                </a>
-              </div>
-          </div>
-          <div class="col-md-8"></div>
-      </div>
+        </div>
 
-  </div>
+      <div style="height: 70px;"></div>
+      <div id="footerInclude"></div>
   </div> <!-- end of Page Div-->
 </div>
    <!-- <script src='js/js-image-slider.js'></script> -->
