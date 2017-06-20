@@ -14,6 +14,7 @@
   <script>
     $(function(){
       $("#headerInclude").load("header.html");
+      $("#footerInclude").load("footer.html");
     });
   </script>
 </head>
@@ -22,11 +23,12 @@
     <div id="wrapper">
 <div class="page">
     <div id="headerInclude"></div>
-    <div style="height: 100px;"></div>   <!-- empty div on top -->
+    <div style="height: 85px;"></div>   <!-- empty div on top -->
 
     <div class="mobileHomeSpace"></div>
         <div  id="home_section" class="row margin_0 sections">
-          <div id="sliderFrame" class="col-xs-24 xs-p-0 ">
+          <div class="col-xs-3 xs-p-0"></div>
+          <div id="sliderFrame" class="col-xs-18 xs-p-0 ">
             <div id="slider">
                 <img src="images/image_11.JPG" alt="" />
                 <img src="images/image_22.JPG" />
@@ -35,6 +37,7 @@
                 <img src="images/image_77.JPG" />
             </div>
           </div>
+            <div class="col-xs-3 xs-p-0"></div>
         </div> <!-- end of section 1-->
 
         <div class="row margin_0">
@@ -77,9 +80,11 @@
                     </a>
                   </div>
                 </div>
-
-</div> <!-- end of Page Div-->
-</div>
+              </div>
+            </div>
+        <div id="footerInclude"></div>
+  </div><!-- end of Page Div-->
+  </div>
    <!-- <script src='js/works.js'></script> -->
    <script src='js/js-image-slider.js'></script>
 </body>
