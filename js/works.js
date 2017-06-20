@@ -21,7 +21,6 @@
 
 $("#years li a").click(function() {
     $(this).parent().addClass('active').siblings().removeClass('active');
-
 });
 
 $('#y2015').on("click", function () {
