@@ -43,9 +43,46 @@
 
     <div style="height: 50px;"></div>
     <div id="footerInclude"></div>
+
+
+    <div id="myImageModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal_image">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img class="showimage img-responsive" src="" />
+                </div>
+                <div class="modal_footer modal-footer">
+                    <button type="button" class="close_btn btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div> <!-- end of Page Div-->
 </div>
    <script src='js/works.js'></script>
+   <script>
+   // Image open on bootstrap modal
+  //  $(document).ready(function () {
+  //      $('.contain_image img').on('click', function (e) {
+  //  			 e.preventDefault();
+  //          var image = $(this).attr('src');
+  //          $('#myImageModal').on('show.bs.modal', function () {
+  //              $(".showimage").attr("src", image);
+  //          });
+   //
+  //      });
+  //  });
+
+  $(document).ready(function () {
+      $('.fa-info-circle').on('click', function (e) {
+        e.preventDefault();
+          //var image = $(this).attr('src');
+
+			$('#myImageModal').modal('show');
+      $('.showimage').attr('src', $('.contain_image').find('img').attr('src'));
+      });
+  });
+   </script>
    <!-- <script src='js/js-image-slider.js'></script> -->
 </body>
 </html>
