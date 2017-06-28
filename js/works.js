@@ -21,7 +21,6 @@
 
 $("#years li a").click(function() {
     $(this).parent().addClass('active').siblings().removeClass('active');
-
 });
 
 $('#y2015').on("click", function () {
@@ -55,14 +54,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="r'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="r'+ d +'" src="" alt="" />'+
+                            '<img id="r'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="r'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="r'+ n +'" src="" alt="" />'+
+                            '<img id="r'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
@@ -118,14 +117,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="s'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="s'+ d +'" src="" alt="" />'+
+                            '<img id="s'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="s'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="s'+ n +'" src="" alt="" />'+
+                            '<img id="s'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
@@ -169,14 +168,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="t'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="t'+ d +'" src="" alt="" />'+
+                            '<img id="t'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="t'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="t'+ n +'" src="" alt="" />'+
+                            '<img id="t'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
                       '</div>');
         }
     }
