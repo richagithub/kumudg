@@ -62,26 +62,42 @@
    <script src='js/works.js'></script>
    <script>
    // Image open on bootstrap modal
-  //  $(document).ready(function () {
-  //      $('.contain_image img').on('click', function (e) {
-  //  			 e.preventDefault();
-  //          var image = $(this).attr('src');
-  //          $('#myImageModal').on('show.bs.modal', function () {
-  //              $(".showimage").attr("src", image);
-  //          });
-   //
-  //      });
-  //  });
+//    $(document).ready(function () {
+//        $('.contain_image img').on('click', function (e) {
+//    			 e.preventDefault();
+//            var image = $(this).attr('src');
+//            $('#myImageModal').on('show.bs.modal', function () {
+//                $(".showimage").attr("src", image);
+//            });
+//   
+//        });
+//    });
 
-  $(document).ready(function () {
-      $('.fa-info-circle').on('click', function (e) {
-        e.preventDefault();
-          //var image = $(this).attr('src');
-
-			$('#myImageModal').modal('show');
-      $('.showimage').attr('src', $('.contain_image').find('img').attr('src'));
-      });
-  });
+        $('#info_2').on('click', function (e) {
+    			 e.preventDefault();
+            var image = $('#r2').attr('src');
+          $('#myImageModal').modal('show');
+          $('.showimage').attr('src', image);
+   
+        });
+       $('#info_3').on('click', function (e) {
+    			 e.preventDefault();
+            var image = $('#r3').attr('src');
+          $('#myImageModal').modal('show');
+          $('.showimage').attr('src', image);
+   
+        });
+  
+//  $(document).ready(function () {
+//      $('.fa-info-circle').on('click', function (e) {
+//        e.preventDefault();
+//          //var image = $(this).attr('src');
+//
+//			$('#myImageModal').modal('show');
+//      $('.showimage').attr('src', $('.contain_image').find('img').attr('src'));
+//      });
+//  });
+       
    </script>
    <!-- <script src='js/js-image-slider.js'></script> -->
 </body>
