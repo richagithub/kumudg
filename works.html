@@ -63,11 +63,11 @@
    <script>
    // Image open on bootstrap modal
     $(document).ready(function () {
-        $('.contain_image img').on('click', function (e) {
+        $('.fa-info-circle').on('click', function (e) {
     			 e.preventDefault();
-            var image = $(this).attr('src');
-            $('#myImageModal').on('show.bs.modal', function () {
-                $(".showimage").attr("src", image);
+          var im=$(this).parent().parent().prev().attr('src');
+			 $('#myImageModal').on('show.bs.modal', function () {
+                $(".showimage").attr("src", im);
             });
    
         });
