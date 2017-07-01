@@ -54,14 +54,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="r'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="r'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="r'+ d +'" src="" alt="" />'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="r'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="r'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="r'+ n +'" src="" alt="" />'+
                       '</div>');
         }
     }
@@ -88,7 +88,7 @@ for(var k =1; k<=9; k++){
                                       '</i>'+
                                       '<span class="xs-p-10">'+
                                       '</span>'+
-                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'">'+
+                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'" data-toggle="modal" data-target="#myImageModal" >'+
                                       '</i>'+
                                       // '<i class="arrow_right">'+
                                       // '</i>'+
@@ -117,14 +117,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="s'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="s'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="s'+ d +'" src="" alt="" />'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="s'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="s'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="s'+ n +'" src="" alt="" />'+
                       '</div>');
         }
     }
@@ -139,7 +139,7 @@ for(var k =1; k<=9; k++){
                                       '</i>'+
                                       '<span class="xs-p-10">'+
                                       '</span>'+
-                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'">'+
+                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'" data-toggle="modal" data-target="#myImageModal">'+
                                       '</i>'+
                                 '</div>'+
                         '</div>');
@@ -168,14 +168,14 @@ for(j =1; j<= i; j++){
     if(j==1){
         for(d =1; d<= 4; d++){
         child.append('<div id="t'+ d + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="t'+ d +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="t'+ d +'" src="" alt=""/>'+
                       '</div>');
         }
     }
     else if(j==2){
         for(n =d; n<= 4+d-1; n++){
         child.append('<div id="t'+ n + 1 +'" class="col-md-6 col-xs-24 xs-p-0 work_images contain_image">'+
-                            '<img id="t'+ n +'" src="" alt="" data-toggle="modal" data-target="#myImageModal"/>'+
+                            '<img id="t'+ n +'" src="" alt="" />'+
                       '</div>');
         }
     }
@@ -190,7 +190,7 @@ for(var k =1; k<=9; k++){
                                       '</i>'+
                                       '<span class="xs-p-10">'+
                                       '</span>'+
-                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'">'+
+                                      '<i class="fa fa-info-circle fa-2x" id="info_'+ k +'" data-toggle="modal" data-target="#myImageModal" >'+
                                       '</i>'+
                                 '</div>'+
                         '</div>');
